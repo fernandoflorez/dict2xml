@@ -12,26 +12,27 @@ Examples
 ========
 
 .. code-block:: python
-from dict2xml import dict2xml
-from xml.etree.cElementTree import tostring
+
+    from dict2xml import dict2xml
+    from xml.etree.cElementTree import tostring
 
 
-tree = {
-    'root': {
-        'foo': 'bar',
-        'children': [
-            {
-                'name': 'child 1'
-            },
-            {
-                'name': 'child 2'
-            }
-        ]
+    tree = {
+        'root': {
+            'foo': 'bar',
+            'children': [
+                {
+                    'name': 'child 1'
+                },
+                {
+                    'name': 'child 2'
+                }
+            ]
+        }
     }
-}
 
-data = dict2xml(tree)
+    data = dict2xml(tree)
 
-print data
+    print data
 
-print tostring(data, encoding='UTF-8')
+    print tostring(data, encoding='UTF-8')
