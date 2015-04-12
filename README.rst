@@ -47,3 +47,8 @@ Examples
     print data
 
     print tostring(data, encoding='UTF-8')
+
+
+dict2xml is available under
+the `MIT license (MIT)
+<http://opensource.org/licenses/MIT>`_.
