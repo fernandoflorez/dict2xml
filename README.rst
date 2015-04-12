@@ -8,6 +8,14 @@ Supports node attributes and text nodes.
 Uses cElementTree internally so no deps under python 2.5+
 
 
+Installation
+============
+
+.. code-block:: bash
+
+    pip install pydict2xml
+
+
 Examples
 ========
 
@@ -27,7 +35,10 @@ Examples
                 {
                     'name': 'child 2'
                 }
-            ]
+            ],
+            'text_node': {
+                '_text': 'This is a test'
+            }
         }
     }
 
